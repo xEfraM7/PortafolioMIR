@@ -1,10 +1,10 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from '../assets/img/meter1.svg';
-import meter2 from '../assets/img/meter2.svg';
-import meter3 from '../assets/img/meter3.svg';
-import colorSharp from '../assets/img/color-sharp.png';
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
@@ -34,12 +34,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                omnis delectus quisquam eligendi ratione beatae <br></br> quia
-                vel, soluta illo iure nisi earum quibusdam voluptatibus ipsum
-                veritatis! Harum quo magni nam.
-              </p>
+              <p>Here is a summary of my skills</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -47,26 +42,26 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="image" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="image" />
-                  <h5>Brand Identify</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="image" />
-                  <h5>Logo Design</h5>
+                  <h5>Html-Css</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="image" />
-                  <h5>Web Development</h5>
+                  <h5>JavaScript</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="image" />
+                  <h5>Laravel/PHP</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="image" />
+                  <h5>Github</h5>
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp}/>
+      <img className="background-image-left" src={colorSharp} />
     </section>
   );
 };

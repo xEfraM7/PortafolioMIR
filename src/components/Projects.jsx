@@ -53,10 +53,7 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Est similique sint possimus asperiores aut enim perspiciatis
-                    quisquam perferendis repellendus sequi, at fuga adipisci
-                    excepturi nemo amet obcaecati, vel, velit libero!
+                    Here is a summary of my projects
                   </p>
                 </div>
               )}
@@ -68,14 +65,17 @@ export const Projects = () => {
                 id="pills"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link 
+                  //Aqui activamos esta opcion para cuando haya varios tabs
+                  // eventKey="first"
+                  >Own Projects</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Nav.Link eventKey="second">Tab Two</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">

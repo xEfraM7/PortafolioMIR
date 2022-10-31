@@ -3,8 +3,9 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon4 from "../assets/img/nav-icon4.svg";
+import navIcon5 from "../assets/img/nav-icon5.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -73,19 +74,24 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/efrain-cabrera-b25489216/">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
-              </a>
-              <a href="#">
+              <a href="https://www.instagram.com/efrain_lol/">
                 <img src={navIcon3} alt="" />
               </a>
+              <a href="https://twitter.com/xEfraCD">
+                <img src={navIcon4} alt="" />
+              </a>
+              <a href="https://github.com/xEfraM7">
+                <img src={navIcon5} alt="" />
+              </a>
             </div>
-            <button className="vvd" onClick={() => {}}>
-              <span>Let's Connect</span>
-            </button>
+            <a href="https://www.linkedin.com/in/efrain-cabrera-b25489216/">
+              <button className="vvd" onClick={() => {}}>
+                <span>Let's Connect</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -23,7 +23,7 @@ export const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDetault();
+    e.preventDefault();
     setButtonText("Sending...");
     let response = await fetch("https://localhost:5173/contact",{
         method:'POST',

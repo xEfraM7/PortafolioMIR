@@ -54,7 +54,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className={isVisible ? "animate_animated animate_fadeIn" : ""}
+                  className={isVisible ? "animate_animated animate_FadeIn" : ""}
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
@@ -62,14 +62,15 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero corrupti adipisci quam tempora quasi! Numquam omnis,
-                    fugiat necessitatibus exercitationem dolore cumque nihil
-                    explicabo a, ullam nulla sint eaque veritatis! Perspiciatis?
+                    I am a programmer with little experience but very eager to
+                    work in the IT world in general, I am good under pressure
+                    and I can solve problems effectively
                   </p>
-                  <button onClick={() => {}}>
-                    Let's connect <ArrowRightCircle size={25} />{" "}
-                  </button>
+                  <a href="https://www.linkedin.com/in/efrain-cabrera-b25489216/" className="text-decoration-none">
+                    <button onClick={() => {}}>
+                      Let's connect <ArrowRightCircle size={25} />{" "}
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>

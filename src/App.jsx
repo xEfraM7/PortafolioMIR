@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import {Footer} from './components/Footer';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
       <Banner/>
       <Skills/>
       <Projects/>
+      <Footer/>
     </div>
   )
 }

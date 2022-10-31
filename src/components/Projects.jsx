@@ -4,6 +4,8 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
@@ -44,15 +46,27 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-              similique sint possimus asperiores aut enim perspiciatis quisquam
-              perferendis repellendus sequi, at fuga adipisci excepturi nemo
-              amet obcaecati, vel, velit libero!
-            </p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={isVisible ? "animate_animated animate_Bounce" : ""}
+                >
+                  <h2>Projects</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Est similique sint possimus asperiores aut enim perspiciatis
+                    quisquam perferendis repellendus sequi, at fuga adipisci
+                    excepturi nemo amet obcaecati, vel, velit libero!
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab One</Nav.Link>
                 </Nav.Item>

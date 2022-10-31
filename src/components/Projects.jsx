@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import projectGifs from "../assets/img/project-gifs.png";
 import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import comingSoon from '../assets/img/coming-soon.jpg'
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -11,6 +12,19 @@ export const Projects = () => {
       title: "Proyecto de Gifs",
       description: "con GIPHY",
       imgUrl: projectGifs,
+      href:"https://gif-expert-app-2.netlify.app"
+    },
+    {
+      title: "Coming Soon",
+      description: "uwu",
+      imgUrl: comingSoon,
+      href: "",
+    },
+    {
+      title: "Coming Soon",
+      description: "uwu",
+      imgUrl: comingSoon,
+      href: "",
     },
   ];
 
@@ -53,11 +67,9 @@ export const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    <a href="https://gif-expert-app-2.netlify.app" className="text-decoration-none">
                       {projects.map((project, index) => {
                         return <ProjectCards key={index} {...project} />;
                       })}
-                    </a>
                   </Row>
                 </Tab.Pane>
               </Tab.Content>

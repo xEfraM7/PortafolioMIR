@@ -18,13 +18,11 @@ export const Projects = () => {
       title: "Coming Soon",
       description: "uwu",
       imgUrl: comingSoon,
-      href: "",
     },
     {
       title: "Coming Soon",
       description: "uwu",
       imgUrl: comingSoon,
-      href: "",
     },
   ];
 

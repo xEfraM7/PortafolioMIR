@@ -6,7 +6,7 @@ export const ProjectCards = ({ title, description, imgUrl,href }) => {
       <div className="proj-imgbx">
         <img src={imgUrl} alt="proj-img" />
         <a
-          href={href}
+          href={href} target="_blank"
           className="text-decoration-none"
         >
           <div className="proj-txtx">

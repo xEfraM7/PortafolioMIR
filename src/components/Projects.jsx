@@ -2,7 +2,9 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import projectGifs from "../assets/img/project-gifs.png";
 import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import comingSoon from '../assets/img/coming-soon.jpg'
+import comingSoon from "../assets/img/coming-soon.jpg";
+import journalImg from "../assets/img/journal-app.png";
+import quizApp from '../assets/img/quiz-app.png';
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -12,12 +14,19 @@ export const Projects = () => {
       title: "Proyecto de Gifs",
       description: "con GIPHY",
       imgUrl: projectGifs,
-      href:"https://gif-expert-app-2.netlify.app"
+      href: "https://gif-expert-app-2.netlify.app",
     },
     {
-      title: "Coming Soon",
-      description: "uwu",
-      imgUrl: comingSoon,
+      title: "Journal App",
+      description: "Firebase authentication and React-Redux",
+      imgUrl: journalImg,
+      href:' https://journal-k9ogsanjj-xefram7.vercel.app',
+    },
+    {
+      title: "Quiz App",
+      description: "Javascript Vanilla",
+      imgUrl: quizApp,
+      href:'https://fabulous-manatee-84bf50.netlify.app'
     },
     {
       title: "Coming Soon",
@@ -65,9 +74,9 @@ export const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                      {projects.map((project, index) => {
-                        return <ProjectCards key={index} {...project} />;
-                      })}
+                    {projects.map((project, index) => {
+                      return <ProjectCards key={index} {...project} />;
+                    })}
                   </Row>
                 </Tab.Pane>
               </Tab.Content>

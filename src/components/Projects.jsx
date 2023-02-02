@@ -4,7 +4,8 @@ import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import comingSoon from "../assets/img/coming-soon.jpg";
 import journalImg from "../assets/img/journal-app.png";
-import quizApp from '../assets/img/quiz-app.png';
+import encriptador from "../assets/img/encriptado.png";
+import quizApp from "../assets/img/quiz-app.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -20,13 +21,19 @@ export const Projects = () => {
       title: "Journal App",
       description: "Firebase authentication and React-Redux",
       imgUrl: journalImg,
-      href:' https://journal-k9ogsanjj-xefram7.vercel.app',
+      href: " https://journal-k9ogsanjj-xefram7.vercel.app",
     },
     {
       title: "Quiz App",
       description: "Javascript Vanilla",
       imgUrl: quizApp,
-      href:'https://fabulous-manatee-84bf50.netlify.app'
+      href: "https://fabulous-manatee-84bf50.netlify.app",
+    },
+    {
+      title: "Encriptador Oracle",
+      description: "Code Challenge #1 Oracle-AluraLatam",
+      imgUrl: encriptador,
+      href: "https://xefram7.github.io/EncriptadorOracle.github.io/",
     },
     {
       title: "Coming Soon",

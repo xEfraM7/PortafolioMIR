@@ -1,14 +1,19 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import js from '../assets/icons/js-icon.svg';
-import html from '../assets/icons/html-5.svg';
-import css from '../assets/icons/css3.svg';
-import Github from '../assets/icons/github.svg';
+import js from "../assets/icons/js-icon.svg";
+import html from "../assets/icons/html-5.svg";
+import css from "../assets/icons/css3.svg";
+import Github from "../assets/icons/github.svg";
 import colorSharp from "../assets/img/color-sharp.png";
-import Laravel from '../assets/img/laravel.jpg';
-import yarn from '../assets/img/yarn.png';
-import npm from '../assets/icons/npm.svg';
+import Laravel from "../assets/img/laravel.jpg";
+import yarn from "../assets/img/yarn.png";
+import npm from "../assets/icons/npm.svg";
+import java from "../assets/icons/java.svg";
+import nextIcon from "../assets/icons/nextjs-icon.svg";
+import react from "../assets/icons/react.svg";
+import springIcon from "../assets/icons/spring-boot.svg";
+import typescript from "../assets/icons/typescript.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -31,6 +36,57 @@ export const Skills = () => {
     },
   };
 
+  const icons = [
+    {
+      icon: typescript,
+      title: "Typescript",
+    },
+    {
+      icon: java,
+      title: "Java",
+    },
+    {
+      icon: nextIcon,
+      title: "NextJS",
+    },
+    {
+      icon: react,
+      title: "React",
+    },
+    {
+      icon: springIcon,
+      title: "Spring Boot",
+    },
+    {
+      icon: js,
+      title: "JavaScript",
+    },
+    {
+      icon: css,
+      title: "Css",
+    },
+    {
+      icon: Github,
+      title: "Github",
+    },
+    {
+      icon: Laravel,
+      title: "Laravel/PHP",
+    },
+    {
+      icon: npm,
+      title: "Npm",
+    },
+    {
+      icon: yarn,
+      title: "Yarn",
+    },
+    {
+      icon: npm,
+      title: "Npm",
+    },
+  ];
+
   return (
     <section className="skills" id="skills">
       <Container>
@@ -44,34 +100,12 @@ export const Skills = () => {
                 infinite={true}
                 className="skill-slider"
               >
-                <div className="item">
-                  <img src={html} alt="image" />
-                  <h5>Html</h5>
-                </div>
-                <div className="item">
-                  <img src={js} alt="image" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={css} alt="image" />
-                  <h5>Css</h5>
-                </div>
-                <div className="item">
-                  <img src={Github} alt="image" />
-                  <h5>Github</h5>
-                </div>
-                <div className="item">
-                  <img src={Laravel} alt="image" />
-                  <h5>Laravel/PHP</h5>
-                </div>
-                <div className="item">
-                  <img src={npm} alt="image" />
-                  <h5>NPM</h5>
-                </div>              
-                <div className="item">
-                  <img src={yarn} alt="image" />
-                  <h5>Yarn</h5>
-                </div>
+                {icons.map(({ icon, title, i }) => (
+                  <div className="item">
+                    <img src={icon} alt="image" key={i} />
+                    <h5>{title}</h5>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </Col>

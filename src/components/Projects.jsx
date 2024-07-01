@@ -5,7 +5,9 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import comingSoon from "../assets/img/coming-soon.jpg";
 import journalImg from "../assets/img/journal-app.png";
 import encriptador from "../assets/img/encriptado.png";
-import quizApp from "../assets/img/quiz-app.png";
+import hisCapture from "../assets/img/hisCapture.jpg";
+import librarianCollectorCapture from "../assets/img/librarianCollectorCaptura.jpg";
+import projectRCapture from "../assets/img/projectR.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -24,20 +26,31 @@ export const Projects = () => {
       href: " https://journal-k9ogsanjj-xefram7.vercel.app",
     },
     {
-      title: "Quiz App",
-      description: "Javascript Vanilla",
-      imgUrl: quizApp,
-      href: "https://fabulous-manatee-84bf50.netlify.app",
-    },
-    {
       title: "Encriptador Oracle",
       description: "Code Challenge #1 Oracle-AluraLatam",
       imgUrl: encriptador,
       href: "https://xefram7.github.io/EncriptadorOracle.github.io/",
     },
     {
+      title: "Project R",
+      description: "Software para restaurants hecho por CodeInTheWeb",
+      imgUrl: projectRCapture,
+    },
+    {
+      title: "Librarian Collector",
+      description:
+        "Desarrollo de seguridad en el inicio de sesion de un sistema de bibliotecas",
+      imgUrl: librarianCollectorCapture,
+    },
+    {
+      title: "Hospital Information System",
+      description:
+        "Desarrollo de modulos de consulta externa tanto maquetacion como funcionamiento",
+      imgUrl: hisCapture,
+    },
+    {
       title: "Coming Soon",
-      description: "uwu",
+      description: "",
       imgUrl: comingSoon,
     },
   ];
@@ -71,12 +84,6 @@ export const Projects = () => {
                     Own Projects
                   </Nav.Link>
                 </Nav.Item>
-                {/* <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                </Nav.Item> */}
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">

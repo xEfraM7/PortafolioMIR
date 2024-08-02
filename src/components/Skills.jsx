@@ -101,8 +101,8 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 {icons.map(({ icon, title, i }) => (
-                  <div className="item">
-                    <img src={icon} alt="image" key={i} />
+                  <div className="item" key={title}>
+                    <img src={icon} alt="image"  />
                     <h5>{title}</h5>
                   </div>
                 ))}

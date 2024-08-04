@@ -102,7 +102,7 @@ export const Skills = () => {
               >
                 {icons.map(({ icon, title, i }) => (
                   <div className="item" key={title}>
-                    <img src={icon} alt="image"  />
+                    <img src={icon} alt="image" />
                     <h5>{title}</h5>
                   </div>
                 ))}
